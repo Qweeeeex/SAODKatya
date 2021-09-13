@@ -1,0 +1,3 @@
+Q:/SAOD/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
+Q:/SAOD/untitled/cmake-build-debug/CMakeFiles/untitled.dir
+Q:/SAOD/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir

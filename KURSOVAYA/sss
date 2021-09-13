@@ -1,0 +1,184 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
+struct spisok {
+    spisok *next;
+    union {
+        short int data;
+        unsigned char Digit[sizeof(short int)];
+    };
+};
+
+unsigned char KDI[sizeof(short int)];
+
+struct ochered {
+    spisok *head;
+    spisok *tail;
+} q;
+
+void FillRand(spisok *&p, int n, int x)
+{
+    for (int i = 0; i<n; i++)
+    {
+        spisok *t = new spisok;
+
+        t->data = rand() % x;
+        t->next = NULL;
+        p = p->next = t;
+    }
+
+}
+
+void output(spisok *p)
+{
+    while (p)
+    {
+        cout << p->data << " ";
+        p = p->next;
+    }
+    cout << "\n";
+}
+
+int CheckSum(spisok *p)
+{
+    int s = 0;
+    while (p)
+    {
+        s += p->data;
+        p = p->next;
+    }
+    return s;
+}
+
+int CheckSeries(spisok *p)
+{
+    int n = 1;
+    spisok *t = new spisok;
+    t = p->next;
+    while (t)
+    {
+        if (p->data > t->data)
+            n++;
+        p = p->next;
+        t = p->next;
+    }
+    return n;
+}
+
+void DS(spisok *&S, int L, int f) {
+    ochered Q[256];
+    spisok *p;
+    int k, i, j;
+    for (j = 0; j<L; j++) {
+        for (i = 0; i<256; i++) {
+            Q[i].tail = (spisok*)&(Q[i].head);
+        }
+        p = S;
+        k = KDI[j];
+        while (p) {
+            int d = p->Digit[k];
+            Q[d].tail->next = p;
+            Q[d].tail = p;
+            p = p->next;
+        }
+        p = (spisok*)&S;
+        if (f) {
+            for (int i = 0; i<256; i++) {
+                if (Q[i].tail != (spisok*)&(Q[i].head)) {
+                    p->next = Q[i].head;
+                    p = Q[i].tail;
+                }
+            }
+        }
+        else {
+            for (int i = 255; i >= 0; i--) {
+                if (Q[i].tail != (spisok*)&(Q[i].head)) {
+                    p->next = Q[i].head;
+                    p = Q[i].tail;
+                }
+            }
+        }
+        p->next = NULL;
+    }
+}
+
+
+
+int main() {
+    int L = 4, f;
+    for(int i = 0; i < L; i++) {
+        KDI[i] = i;
+    }
+
+    spisok *AAA = new spisok;
+
+    L = 2;
+    AAA->data = rand() % 100;
+    AAA->next = 0;
+    q.head = AAA;
+    q.tail = AAA;
+    FillRand(AAA, 9, 100);
+    cout << "Spisok inc\n";
+    output(q.head);
+    cout << "Check sum " << CheckSum(q.head) << "\n";
+    cout << "Series " << CheckSeries(q.head) << "\n";
+    f = 1;
+    DS(q.head, L, f);
+    cout << "Sort:\n";
+    output(q.head);
+    cout << "Check sum " << CheckSum(q.head) << "\n";
+    cout << "Series " << CheckSeries(q.head) << "\n";
+    AAA->data = rand() % 100;
+    AAA->next = 0;
+    q.head = AAA;
+    q.tail = AAA;
+    FillRand(AAA, 9, 100);
+
+    cout << "\nSpisok dec\n";
+    output(q.head);
+    cout << "Check sum " << CheckSum(q.head) << "\n";
+    cout << "Series " << CheckSeries(q.head) << "\n";
+    f = 0;
+    DS(q.head, L, f);
+    cout << "Sort:\n";
+    output(q.head);
+    cout << "Check sum " << CheckSum(q.head) << "\n";
+    cout << "Series " << CheckSeries(q.head) << "\n";
+
+    L = 4;
+    AAA->data = rand() % 10000;
+    AAA->next = 0;
+    q.head = AAA;
+    q.tail = AAA;
+    FillRand(AAA, 9, 10000);
+    cout << "\nSpisok inc\n";
+    output(q.head);
+    cout << "Check sum " << CheckSum(q.head) << "\n";
+    cout << "Series " << CheckSeries(q.head) << "\n";
+    f = 1;
+    DS(q.head, L, f);
+    cout << "Sort:\n";
+    output(q.head);
+    cout << "Check sum " << CheckSum(q.head) << "\n";
+    cout << "Series " << CheckSeries(q.head) << "\n";
+
+    AAA->data = rand() % 10000;
+    AAA->next = 0;
+    q.head = AAA;
+    q.tail = AAA;
+    FillRand(AAA, 9, 10000);
+    cout << "\nSpisok dec\n";
+    output(q.head);
+    cout << "Check sum " << CheckSum(q.head) << "\n";
+    cout << "Series " << CheckSeries(q.head) << "\n";
+    f = 0;
+    DS(q.head, L, f);
+    cout << "Sort:\n";
+    output(q.head);
+    cout << "Check sum " << CheckSum(q.head) << "\n";
+    cout << "Series " << CheckSeries(q.head) << "\n";
+
+    return 0;
+}

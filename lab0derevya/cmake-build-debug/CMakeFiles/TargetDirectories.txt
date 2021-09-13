@@ -1,0 +1,3 @@
+Q:/SAOD/lab0derevya/cmake-build-debug/CMakeFiles/lab0derevya.dir
+Q:/SAOD/lab0derevya/cmake-build-debug/CMakeFiles/edit_cache.dir
+Q:/SAOD/lab0derevya/cmake-build-debug/CMakeFiles/rebuild_cache.dir

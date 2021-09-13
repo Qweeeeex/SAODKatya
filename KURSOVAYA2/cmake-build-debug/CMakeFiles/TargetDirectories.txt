@@ -1,0 +1,3 @@
+Q:/SAOD/KURSOVAYA2/cmake-build-debug/CMakeFiles/KURSOVAYA2.dir
+Q:/SAOD/KURSOVAYA2/cmake-build-debug/CMakeFiles/edit_cache.dir
+Q:/SAOD/KURSOVAYA2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

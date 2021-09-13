@@ -1,0 +1,3 @@
+Q:/SAOD/kodirovanie/cmake-build-debug/CMakeFiles/kodirovanie.dir
+Q:/SAOD/kodirovanie/cmake-build-debug/CMakeFiles/edit_cache.dir
+Q:/SAOD/kodirovanie/cmake-build-debug/CMakeFiles/rebuild_cache.dir

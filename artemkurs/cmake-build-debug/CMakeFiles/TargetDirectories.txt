@@ -1,0 +1,3 @@
+Q:/SAOD/artemkurs/cmake-build-debug/CMakeFiles/artemkurs.dir
+Q:/SAOD/artemkurs/cmake-build-debug/CMakeFiles/edit_cache.dir
+Q:/SAOD/artemkurs/cmake-build-debug/CMakeFiles/rebuild_cache.dir

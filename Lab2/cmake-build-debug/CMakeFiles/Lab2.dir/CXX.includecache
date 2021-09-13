@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+Q:/SAOD/Lab2/main.cpp
+cstdio
+-
+conio.h
+-
+cstdlib
+-
+clocale
+-
+iostream
+-
+ctime
+-
+

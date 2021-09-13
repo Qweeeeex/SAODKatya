@@ -1,0 +1,3 @@
+C:\CMake\bin\cmake.exe -E rm -f CMakeFiles\KURSOVAYA.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\KURSOVAYA.dir/objects.a @CMakeFiles\KURSOVAYA.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\KURSOVAYA.dir/objects.a -Wl,--no-whole-archive  -o KURSOVAYA.exe -Wl,--out-implib,libKURSOVAYA.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\KURSOVAYA.dir\linklibs.rsp

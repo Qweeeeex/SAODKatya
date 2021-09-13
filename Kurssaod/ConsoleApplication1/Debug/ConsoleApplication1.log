@@ -1,0 +1,11 @@
+﻿  ConsoleApplication1.cpp
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(98,10): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(598,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(588,6): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(597,3): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(640,16): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(647,21): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(657,6): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(658,7): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(661,3): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(682,44): warning C4244: +=: преобразование "double" в "float", возможна потеря данных

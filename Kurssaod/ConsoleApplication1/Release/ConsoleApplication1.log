@@ -1,0 +1,12 @@
+﻿  ConsoleApplication1.cpp
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(11,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(599,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(641,16): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(648,21): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+Q:\SAOD\Kurssaod\ConsoleApplication1\ConsoleApplication1.cpp(683,44): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 74 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  ConsoleApplication1.vcxproj -> Q:\SAOD\Kurssaod\ConsoleApplication1\Release\ConsoleApplication1.exe

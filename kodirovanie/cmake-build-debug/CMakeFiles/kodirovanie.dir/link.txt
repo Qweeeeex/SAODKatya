@@ -1,0 +1,3 @@
+C:\CMake\bin\cmake.exe -E rm -f CMakeFiles\kodirovanie.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\kodirovanie.dir/objects.a @CMakeFiles\kodirovanie.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\kodirovanie.dir/objects.a -Wl,--no-whole-archive  -o kodirovanie.exe -Wl,--out-implib,libkodirovanie.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\kodirovanie.dir\linklibs.rsp

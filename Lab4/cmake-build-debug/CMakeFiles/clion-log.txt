@@ -1,0 +1,4 @@
+c:\CMake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" Q:\SAOD\Lab4
+-- Configuring done
+-- Generating done
+-- Build files have been written to: Q:/SAOD/Lab4/cmake-build-debug
